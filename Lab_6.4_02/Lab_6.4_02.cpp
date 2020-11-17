@@ -23,7 +23,7 @@ int main()
     cout << "Random array: ";
     Print(array, length, 0);
 
-    cout << "Multiple result: " <<Mult(array, length, 0) << endl;
+    cout << "Multiple result: " << Mult(array, length, 0) << endl;
 
     int start = Find_Start(array, length, 0, 0);
     cout << "Start: " << start << endl;
@@ -36,6 +36,7 @@ int main()
     Sort(array, length, 0);
     cout << "Sorted array: ";
     Print(array, length, 0);
+
 
 
 
@@ -63,7 +64,7 @@ void Print(int* a, const int size, int i)
 
 int Mult(int arr[], int size, int i)
 {
-    if ((i + 1) == size)
+    if (i == size)
         return 1;
     else if ((i % 2) == 0)
         return arr[i] * Mult(arr, size, i + 1);
